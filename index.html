@@ -8,30 +8,34 @@
     <title>Stage One Task</title>
 </head>
 <body>
-    <div class="body">
+    <section class="container">
+    <div class="name">
     <div class="data">
-    <label for="name">Slack Name:</label>
+    <span for="name">Slack Name:</span>
     <p data-testid="slackUserName">Oluwanifemi</p>
     </div>
-    <div class="data">
+    <div>
     <img src="https://ca.slack-edge.com/T05FFAA91JP-U05RZQUECD6-0cf4ef1d14f4-512" data-testid="slackDisplayImage" alt="slackDisplayImage">
+    <label for="slackDisplayImage">Slack Display Image</label>
     </div>
     <div class="data">
-        <label for="day">Current Day of the Week:</label>
-        <p data-testid="currentDayOfTheWeek">Sunday</p>
+        <span for="day">Current Day of the Week:</span>
+        <p id="dayoftheweek" data-testid="currentDayOfTheWeek"></p>
     </div>
     <div class="data">
-        <label for="time">Current UTC Time:</label>
-        <p data-testid="currentUTCTime"></p>
+        <span for="time">Current UTC Time:</span>
+        <p id="currentUTCtime" data-testid="currentUTCTime"></p>
     </div>
     <div class="data">
-        <label for="track">Track:</label>
+        <span for="track">Track:</span>
         <p data-testid="myTrack">Frontend</p>
     </div>
     <div class="data">
-        <label for="git">GitHub URL:</label>
+        <span for="git">GitHub URL:</span>
         <a href="#" data-testid="githubURL">My repository</a>
     </div>
-</div>
+    </div>
+    </section>
 </body>
+<script src="index.js"></script>
 </html>
