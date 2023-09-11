@@ -6,7 +6,9 @@ function currentTime() {
     const minutes = date.getUTCMinutes();
     const seconds = date.getUTCSeconds();
 
-    const milliseconds = (hours * 3600 + minutes * 60 + seconds) * 1000;
+    // const milliseconds = (hours * 3600 + minutes * 60 + seconds) * 1000;
+
+    var milliseconds = date.getTime();
 
 
     document.getElementById("currentUTCtime").innerHTML = milliseconds + " " +"milliseconds";
